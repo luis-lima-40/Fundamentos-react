@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+
+ /*Vc não pode regar 2 elementos adjacentes dentro do Root pois irá dar erro
+  e nao vai exibir, para isso crie uma div e coloque cada um dos elementos dentro da sua propria div*/
+
+/*aqui no react tudo que vc coloca dentro de um par de chaves vira um javSCRIPT */
+
+  //<ul> //lista não ordenada
+
+ReactDOM.render(
+  
+<App></App>,
+
+  document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
